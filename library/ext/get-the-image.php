@@ -17,9 +17,9 @@
  *
  * @package   GetTheImage
  * @version   1.1.0
- * @author    Justin Tadlock <justin@justintadlock.com>
- * @copyright Copyright (c) 2008 - 2014, Justin Tadlock
- * @link      http://justintadlock.com/archives/2008/05/27/get-the-image-wordpress-plugin
+ * @author    Ryan Miller <justin@justintadlock.com>
+ * @copyright Copyright (c) 2008 - 2014, Ryan Miller
+ * @link      https://ryanmiller.me/archives/2008/05/27/get-the-image-wordpress-plugin
  * @license   http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
  */
 

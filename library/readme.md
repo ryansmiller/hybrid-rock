@@ -12,7 +12,7 @@ In 2008, I started work on Hybrid Core.  At the time, it was used in only one of
 
 ### Who is Hybrid Core for?
 
-Primarily, Hybrid Core is for me, Justin Tadlock.  I use it to build all of my [WordPress themes](http://themehybrid.com/themes) at Theme Hybrid, which is my plugin and theme site.
+Primarily, Hybrid Core is for me, Ryan Miller.  I use it to build all of my [WordPress themes](http://themehybrid.com/themes) at Theme Hybrid, which is my plugin and theme site.
 
 However, I also maintain it for other theme authors who need a solid framework behind their themes that doesn't force them into certain markup and gives them ultimate flexibility.
 
@@ -40,7 +40,7 @@ No, Hybrid Core is not a theme.  It is a framework that you drop into your theme
 
 ### Wait. Aren't frameworks parent themes?
 
-No, not really, they're not.  Unfortunately, many theme authors have co-opted the term "framework" and applied it to themes intended to be used solely as parent themes.  I suppose you could stretch the term framework to pretty much apply to any base code that you can build from, but this has meant for some confusing terminology in the WordPress community.  We already have a term for what these "framework" themes are &mdash; they're called "parent themes".  If you're interested in reading more on this topic, I recommend checking out "[Frameworks? Parent, child, and  grandchild themes?](http://justintadlock.com/archives/2010/08/16/frameworks-parent-child-and-grandchild-themes)" for an in-depth discussion on the subject.
+No, not really, they're not.  Unfortunately, many theme authors have co-opted the term "framework" and applied it to themes intended to be used solely as parent themes.  I suppose you could stretch the term framework to pretty much apply to any base code that you can build from, but this has meant for some confusing terminology in the WordPress community.  We already have a term for what these "framework" themes are &mdash; they're called "parent themes".  If you're interested in reading more on this topic, I recommend checking out "[Frameworks? Parent, child, and  grandchild themes?](https://ryanmiller.me/archives/2010/08/16/frameworks-parent-child-and-grandchild-themes)" for an in-depth discussion on the subject.
 
 ### So, I can't have child themes?
 
@@ -56,4 +56,4 @@ I make little money directly from Hybrid Core.  Developers (those who use the fr
 
 This project is licensed under the [GNU GPL](http://www.gnu.org/licenses/old-licenses/gpl-2.0.html), version 2 or later.
 
-2008&thinsp;&ndash;&thinsp;2015 &copy; [Justin Tadlock](http://justintadlock.com).
+2008&thinsp;&ndash;&thinsp;2015 &copy; [Ryan Miller](https://ryanmiller.me).

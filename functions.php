@@ -23,8 +23,8 @@
  * @package    Hybrid Rock
  * @subpackage Functions
  * @version    1.0.0
- * @author     Justin Tadlock <justin@justintadlock.com>
- * @copyright  Copyright (c) 2013 - 2015, Justin Tadlock
+ * @author     Ryan Miller <justin@justintadlock.com>
+ * @copyright  Copyright (c) 2013 - 2015, Ryan Miller
  * @link       http://themehybrid.com/themes/hybrid-base
  * @license    http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
  */

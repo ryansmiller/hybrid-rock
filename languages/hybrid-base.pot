@@ -1,4 +1,4 @@
-# Copyright (C) 2015 Justin Tadlock
+# Copyright (C) 2015 Ryan Miller
 # This file is distributed under the GNU General Public License v2.0 or later.
 msgid ""
 msgstr ""
@@ -463,9 +463,9 @@ msgid "A starter theme from Theme Hybrid. Please fork this."
 msgstr ""
 
 #. Author of the plugin/theme
-msgid "Justin Tadlock"
+msgid "Ryan Miller"
 msgstr ""
 
 #. Author URI of the plugin/theme
-msgid "http://justintadlock.com"
+msgid "https://ryanmiller.me"
 msgstr ""

@@ -8,10 +8,10 @@
  *
  * This code is a modified version of David Chandra's original menu code for the Shell theme.
  *
- * @author    Justin Tadlock <justin@justintadlock.com>
+ * @author    Ryan Miller <justin@justintadlock.com>
  * @author    David Chandra <david.warna@gmail.com>
  * @copyright Copyright (c) 2013-2015
- * @link      http://justintadlock.com
+ * @link      https://ryanmiller.me
  * @link      http://shellcreeper.com
  * @license   http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
  */
