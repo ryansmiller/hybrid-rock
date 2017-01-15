@@ -66,10 +66,10 @@ function hybrid_rock_theme_setup() {
 	add_theme_support( 'automatic-feed-links' );
 
 	// Post formats.
-	add_theme_support(
+	/* add_theme_support(
 		'post-formats',
 		array( 'aside', 'audio', 'chat', 'image', 'gallery', 'link', 'quote', 'status', 'video' )
-	);
+	); */
 
 	// Handle content width for embeds and images.
 	hybrid_set_content_width( 1280 );
