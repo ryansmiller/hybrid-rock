@@ -41,6 +41,9 @@ require_once( $hybrid_rock_dir . 'inc/theme.php'             );
 // Launch the Hybrid Core framework.
 new Hybrid();
 
+// Load TGM Plugin Activation.
+require_once( $hybrid_rock_dir . 'inc/tgm-plugin-activation/class-tgm-plugin-activation.php'	);
+
 // Do theme setup on the 'after_setup_theme' hook.
 add_action( 'after_setup_theme', 'hybrid_rock_theme_setup', 5 );
 
