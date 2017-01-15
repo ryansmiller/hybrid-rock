@@ -1,7 +1,10 @@
 <!doctype html>
-<html class="no-js" <?php language_attributes( 'html' ); ?>>
+<html class="no-js no-svg" <?php language_attributes( 'html' ); ?>>
 
 <head <?php hybrid_attr( 'head' ); ?>>
+<meta charset="<?php bloginfo( 'charset' ); ?>">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <?php wp_head(); // Hook required for scripts, styles, and other <head> items. ?>
 </head>
 
