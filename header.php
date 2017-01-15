@@ -1,11 +1,15 @@
-<!DOCTYPE html>
-<html <?php language_attributes( 'html' ); ?>>
+<!doctype html>
+<html class="no-js" <?php language_attributes( 'html' ); ?>>
 
 <head <?php hybrid_attr( 'head' ); ?>>
 <?php wp_head(); // Hook required for scripts, styles, and other <head> items. ?>
 </head>
 
 <body <?php hybrid_attr( 'body' ); ?>>
+
+	<!--[if lte IE 9]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+    <![endif]-->
 
 	<div id="container">
 
