@@ -1,7 +1,7 @@
 <?php
 
 # Call late so child themes can override.
-add_action( 'after_setup_theme', 'hybrid_base_custom_background_setup', 15 );
+add_action( 'after_setup_theme', 'hybrid_rock_custom_background_setup', 15 );
 
 /**
  * Adds support for the WordPress 'custom-background' theme feature.
@@ -10,14 +10,14 @@ add_action( 'after_setup_theme', 'hybrid_base_custom_background_setup', 15 );
  * @access public
  * @return void
  */
-function hybrid_base_custom_background_setup() {
+function hybrid_rock_custom_background_setup() {
 
 	add_theme_support(
 		'custom-background',
 		array(
 			'default-color'    => 'ffffff',
 			'default-image'    => '',
-			'wp-head-callback' => 'hybrid_base_custom_background_callback',
+			'wp-head-callback' => 'hybrid_rock_custom_background_callback',
 		)
 	);
 }
@@ -35,7 +35,7 @@ function hybrid_base_custom_background_setup() {
  * @access public
  * @return void
  */
-function hybrid_base_custom_background_callback() {
+function hybrid_rock_custom_background_callback() {
 
 	// Get the background image.
 	$image = get_background_image();

@@ -2,7 +2,7 @@
 # This file is distributed under the GNU General Public License v2.0 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Hybrid Base 1.0.0\n"
+"Project-Id-Version: Hybrid Rock 1.0.0\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tags/hybrid-base\n"
 "POT-Creation-Date: 2015-08-19 16:54:48+00:00\n"
 "MIME-Version: 1.0\n"
@@ -451,7 +451,7 @@ msgstr ""
 msgid "This is an example widget to show how the Primary sidebar looks by default. You can add custom widgets from the %swidgets screen%s in the admin."
 msgstr ""
 #. Theme Name of the plugin/theme
-msgid "Hybrid Base"
+msgid "Hybrid Rock"
 msgstr ""
 
 #. Theme URI of the plugin/theme

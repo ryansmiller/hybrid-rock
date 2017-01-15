@@ -20,7 +20,7 @@
  * You should have received a copy of the GNU General Public License along with this program; if not, write
  * to the Free Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA
  *
- * @package    HybridBase
+ * @package    Hybrid Rock
  * @subpackage Functions
  * @version    1.0.0
  * @author     Justin Tadlock <justin@justintadlock.com>
@@ -30,19 +30,19 @@
  */
 
 // Get the template directory and make sure it has a trailing slash.
-$hybrid_base_dir = trailingslashit( get_template_directory() );
+$hybrid_rock_dir = trailingslashit( get_template_directory() );
 
 // Load the Hybrid Core framework and theme files.
-require_once( $hybrid_base_dir . 'library/hybrid.php'        );
-require_once( $hybrid_base_dir . 'inc/custom-background.php' );
-require_once( $hybrid_base_dir . 'inc/custom-header.php'     );
-require_once( $hybrid_base_dir . 'inc/theme.php'             );
+require_once( $hybrid_rock_dir . 'library/hybrid.php'        );
+require_once( $hybrid_rock_dir . 'inc/custom-background.php' );
+require_once( $hybrid_rock_dir . 'inc/custom-header.php'     );
+require_once( $hybrid_rock_dir . 'inc/theme.php'             );
 
 // Launch the Hybrid Core framework.
 new Hybrid();
 
 // Do theme setup on the 'after_setup_theme' hook.
-add_action( 'after_setup_theme', 'hybrid_base_theme_setup', 5 );
+add_action( 'after_setup_theme', 'hybrid_rock_theme_setup', 5 );
 
 /**
  * Theme setup function.  This function adds support for theme features and defines the default theme
@@ -52,7 +52,7 @@ add_action( 'after_setup_theme', 'hybrid_base_theme_setup', 5 );
  * @access public
  * @return void
  */
-function hybrid_base_theme_setup() {
+function hybrid_rock_theme_setup() {
 
 	// Theme layouts.
 	add_theme_support( 'theme-layouts', array( 'default' => is_rtl() ? '2c-r' :'2c-l' ) );
