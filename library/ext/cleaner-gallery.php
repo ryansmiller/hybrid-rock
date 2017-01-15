@@ -16,7 +16,7 @@
  *
  * @package   CleanerGallery
  * @version   1.2.0-dev
- * @author    Ryan Miller <justin@justintadlock.com>
+ * @author    Ryan Miller <ryan@ryanmiller.me>
  * @copyright Copyright (c) 2008 - 2015, Ryan Miller
  * @link      https://ryanmiller.me/archives/2008/04/13/cleaner-wordpress-gallery-plugin
  * @license   http://www.gnu.org/licenses/old-licenses/gpl-2.0.html

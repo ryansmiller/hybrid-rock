@@ -6,7 +6,7 @@
  *
  * @package    HybridCore
  * @subpackage Includes
- * @author     Ryan Miller <justin@justintadlock.com>
+ * @author     Ryan Miller <ryan@ryanmiller.me>
  * @copyright  Copyright (c) 2008 - 2015, Ryan Miller
  * @link       http://themehybrid.com/hybrid-core
  * @license    http://www.gnu.org/licenses/old-licenses/gpl-2.0.html

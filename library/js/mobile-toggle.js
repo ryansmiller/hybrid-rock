@@ -8,7 +8,7 @@
  *
  * This code is a modified version of David Chandra's original menu code for the Shell theme.
  *
- * @author    Ryan Miller <justin@justintadlock.com>
+ * @author    Ryan Miller <ryan@ryanmiller.me>
  * @author    David Chandra <david.warna@gmail.com>
  * @copyright Copyright (c) 2013-2015
  * @link      https://ryanmiller.me

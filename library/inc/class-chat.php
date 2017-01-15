@@ -6,7 +6,7 @@
  * @package    Hybrid
  * @subpackage Includes
  * @author     David Chandra <david.warna@gmail.com>
- * @author     Ryan Miller <justin@justintadlock.com>
+ * @author     Ryan Miller <ryan@ryanmiller.me>
  * @copyright  Copyright (c) 2008 - 2015, Ryan Miller
  * @link       http://themehybrid.com/hybrid-core
  * @link       https://ryanmiller.me/archives/2012/08/21/post-formats-chat

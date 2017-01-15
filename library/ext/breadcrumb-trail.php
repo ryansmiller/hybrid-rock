@@ -16,7 +16,7 @@
  *
  * @package   BreadcrumbTrail
  * @version   1.0.1
- * @author    Ryan Miller <justin@justintadlock.com>
+ * @author    Ryan Miller <ryan@ryanmiller.me>
  * @copyright Copyright (c) 2008 - 2015, Ryan Miller
  * @link      http://themehybrid.com/plugins/breadcrumb-trail
  * @license   http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
