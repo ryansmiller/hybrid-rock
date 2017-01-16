@@ -84,6 +84,45 @@ function hybrid_rock_theme_setup() {
 	hybrid_set_content_width( 1280 );
 }
 
+
+// Enqueue scripts and styles
+add_action( 'wp_enqueue_scripts', 'hybrid_rock_scripts' );
+
+/**
+ * Scripts and styles setup function.
+ *
+ * @since  1.0.0
+ * @access public
+ * @return void
+ */
+function hybrid_rock_scripts() {
+
+
+	wp_deregister_style( 'font-awesome' );
+
+	wp_enqueue_style( 'bootstrap', 'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css', array(), '3.3.7', 'all' );
+
+	wp_enqueue_style( 'font-awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css', array(), '4.7.0', 'all' );
+
+
+
+	wp_deregister_script( 'jquery' );
+
+	wp_enqueue_script( 'jquery', 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js', array(), '3.1.1', false );
+
+	wp_enqueue_script( 'bootstrap', 'https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js', array(), '3.3.7', true );
+
+	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
+		wp_enqueue_script( 'comment-reply' );
+	}
+
+}
+
+
+
+
+
+
 /**
  * Include the TGM_Plugin_Activation class.
  *
