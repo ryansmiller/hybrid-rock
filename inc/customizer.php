@@ -9,6 +9,9 @@
  */
 
 
+if ( function_exists( 'Kirki' ) ) {
+
+
 /**
  * Add postMessage support for site title and description for the Theme Customizer.
  *
@@ -1805,4 +1808,6 @@ Kirki::add_field( 'rock', array(
     'priority'    => 110,
 ) );
 */
+
+}
 
