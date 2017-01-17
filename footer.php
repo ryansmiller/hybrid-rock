@@ -6,6 +6,8 @@
 
 		<?php hybrid_get_menu( 'subsidiary' ); // Loads the menu/subsidiary.php template. ?>
 
+		<?php hybrid_get_menu( 'breadcrumbs' ); // Loads the menu/breadcrumbs.php template. ?>
+
 		<footer <?php hybrid_attr( 'footer' ); ?>>
 
 			<p class="credit">

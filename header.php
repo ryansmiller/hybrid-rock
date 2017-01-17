@@ -38,5 +38,3 @@
 		<?php hybrid_get_menu( 'secondary' ); // Loads the menu/secondary.php template. ?>
 
 		<div id="main" class="main">
-
-			<?php // hybrid_get_menu( 'breadcrumbs' ); // Loads the menu/breadcrumbs.php template. ?>
