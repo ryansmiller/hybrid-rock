@@ -13,6 +13,33 @@ if ( function_exists( 'Kirki' ) ) {
 
 
 /**
+ * Remove default Customizer settings, panels, and sections
+ *
+ * @since  1.0.0
+ * @access public
+ * @return void
+ * 
+ */
+
+add_action( 'customize_register', 'hybrid_rock_remove_customize_register' );
+
+function hybrid_rock_remove_customize_register( $wp_customize ) {
+
+    $wp_customize->remove_section( 'header_image' );
+    $wp_customize->remove_section( 'background_image' );
+    $wp_customize->remove_section( 'static_front_page' );
+    $wp_customize->remove_section( 'colors' );
+ //   $wp_customize->remove_section( 'custom_css' );
+
+    $wp_customize->remove_control( 'blogname' );
+    $wp_customize->remove_control( 'blogdescription' );
+    $wp_customize->remove_control( 'display_header_text' );
+
+}
+
+
+
+/**
  * Add postMessage support for site title and description for the Theme Customizer.
  *
  * @param WP_Customize_Manager $wp_customize Theme Customizer object.
@@ -301,6 +328,23 @@ Kirki::add_panel( 'header', array(
         'title'          => __( 'Nav: Style' ),
         'panel'          => 'header',
         'priority'       => 70,
+        'capability'     => 'edit_theme_options',
+    ) );
+
+
+/**
+ * Panels and Sections: 6. Code
+*/
+
+Kirki::add_panel( 'code', array(
+    'priority'    => 60,
+    'title'       => __( 'Code', 'hybrid_rock' ),
+) );
+
+    Kirki::add_section( 'code_custom_css', array(
+        'title'          => __( 'Custom CSS' ),
+        'panel'          => 'code',
+        'priority'       => 10,
         'capability'     => 'edit_theme_options',
     ) );
 
@@ -1170,6 +1214,25 @@ Kirki::add_field( 'rock', array(
 ) );
 
 
+
+
+/**
+ * Fields: 6. Code
+*/
+
+
+Kirki::add_field( 'hybrid_rock', array(
+    'type'        => 'code',
+    'settings'    => 'code',
+    'label'       => __( 'Custom CSS', 'hybrid_rock' ),
+    'section'     => 'code_custom_css',
+    'priority'    => 10,
+    'choices'     => array(
+        'language' => 'css',
+        'theme'    => 'monokai',
+        
+    ),
+) );
 
 
 

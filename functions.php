@@ -115,12 +115,13 @@ function hybrid_rock_scripts() {
 }
 
 /**
- * Customizer additions.
+ * Custom Customizer functions.
  *
  * @since  1.0.0
  * @access public
  * @return void
  */
+
 require( $hybrid_rock_dir . 'inc/customizer.php' );
 
 
