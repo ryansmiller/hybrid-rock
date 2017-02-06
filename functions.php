@@ -291,9 +291,9 @@ function hybrid_rock_register_required_plugins() {
  */
 
 
-add_action( 'after_setup_theme', 'hybrid_rock_unregister_nav_menus', 20 );
+add_action( 'init', 'hybrid_rock_unregister_nav_menus');
 
-function hybrid_rock_unregister_nav_menus()
+function hybrid_rock_unregister_nav_menus() {
 
 	unregister_nav_menu( 'secondary' );
 	unregister_nav_menu( 'subsidiary' );
