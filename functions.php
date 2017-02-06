@@ -301,6 +301,23 @@ function hybrid_rock_unregister_nav_menus() {
 }
 
 /**
+ * Unregister Sidebars
+ *
+ * @since  1.0.0
+ * @access public
+ * @return void
+ */
+
+add_action( 'widgets_init', 'hybrid_rock_unregister_sidebars', 11 );
+
+function hybrid_rock_unregister_sidebars() {
+
+	unregister_sidebar( 'primary' );
+	unregister_sidebar( 'subsidiary' );
+}
+
+
+/**
  * Unregister Widgets
  *
  * @since  1.0.0
@@ -308,8 +325,11 @@ function hybrid_rock_unregister_nav_menus() {
  * @return void
  */
 
+add_action('widgets_init', 'hybrid_rock_unregister_widgets', 11);
 
 function hybrid_rock_unregister_widgets() {     
+
+	// Default Widgets
 
 	unregister_widget('WP_Widget_Pages');     
 	unregister_widget('WP_Widget_Calendar');     
@@ -324,7 +344,34 @@ function hybrid_rock_unregister_widgets() {
 	unregister_widget('WP_Widget_RSS');     
 	unregister_widget('WP_Widget_Tag_Cloud');     
 	unregister_widget('WP_Nav_Menu_Widget');     
-	unregister_widget('Twenty_Eleven_Ephemera_Widget'); } 
+	unregister_widget('Twenty_Eleven_Ephemera_Widget'); 
 
-add_action('widgets_init', 'hybrid_rock_unregister_widgets', 11);
+	// WooCommerce Widgets
+
+	unregister_widget( 'WC_Widget_Recent_Products' );
+	unregister_widget( 'WC_Widget_Featured_Products' );
+	unregister_widget( 'WC_Widget_Product_Categories' );
+	unregister_widget( 'WC_Widget_Product_Tag_Cloud' );
+	unregister_widget( 'WC_Widget_Cart' );
+	unregister_widget( 'WC_Widget_Layered_Nav' );
+	unregister_widget( 'WC_Widget_Layered_Nav_Filters' );
+	unregister_widget( 'WC_Widget_Price_Filter' );
+	unregister_widget( 'WC_Widget_Product_Search' );
+	unregister_widget( 'WC_Widget_Top_Rated_Products' );
+	unregister_widget( 'WC_Widget_Recent_Reviews' );
+	unregister_widget( 'WC_Widget_Recently_Viewed' );
+	unregister_widget( 'WC_Widget_Best_Sellers' );
+	unregister_widget( 'WC_Widget_Onsale' );
+	unregister_widget( 'WC_Widget_Random_Products' );
+	unregister_widget( 'WC_Widget_Rating_Filter' );
+	unregister_widget( 'WC_Widget_Products' );
+
+	// Other Widgets
+
+	unregister_widget( 'WPForms_Widget' );
+	unregister_widget( 'Tribe_Events_List_Widget' );
+
+} 
+
+
 

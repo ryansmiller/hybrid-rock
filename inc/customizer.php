@@ -35,7 +35,7 @@ function hybrid_rock_remove_customize_register( $wp_customize ) {
     $wp_customize->remove_control( 'blogdescription' );
     $wp_customize->remove_control( 'display_header_text' );
 
-    $wp_customize->remove_panel('widgets')->active_callback = '__return_false';
+  //  $wp_customize->remove_panel('widgets')->active_callback = '__return_false';
 
     $wp_customize->add_panel( 'tribe_customizer' )->title = "Events";
   //  $wp_customize->add_panel( 'widgets' )->title = "Widgets";
