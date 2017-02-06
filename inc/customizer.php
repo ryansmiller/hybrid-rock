@@ -25,17 +25,21 @@ add_action( 'customize_register', 'hybrid_rock_remove_customize_register' );
 
 function hybrid_rock_remove_customize_register( $wp_customize ) {
 
+    $wp_customize->remove_section( 'themes' );
     $wp_customize->remove_section( 'header_image' );
     $wp_customize->remove_section( 'background_image' );
     $wp_customize->remove_section( 'static_front_page' );
     $wp_customize->remove_section( 'colors' );
+    $wp_customize->remove_section( 'title_tagline' );
     $wp_customize->remove_control( 'blogname' );
     $wp_customize->remove_control( 'blogdescription' );
     $wp_customize->remove_control( 'display_header_text' );
 
+    $wp_customize->remove_panel('widgets')->active_callback = '__return_false';
+
     $wp_customize->add_panel( 'tribe_customizer' )->title = "Events";
-    $wp_customize->add_panel( 'widgets' )->title = "Widgets";
-    $wp_customize->get_panel( 'widgets' )->priority = 250;
+  //  $wp_customize->add_panel( 'widgets' )->title = "Widgets";
+  //  $wp_customize->get_panel( 'widgets' )->priority = 250;
 
 
 }
