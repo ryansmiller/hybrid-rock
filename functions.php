@@ -282,3 +282,21 @@ function hybrid_rock_register_required_plugins() {
 	tgmpa( $plugins, $config );
 }
 
+/**
+ * Unregister Nav Menus
+ *
+ * @since  1.0.0
+ * @access public
+ * @return void
+ */
+
+
+add_action( 'after_setup_theme', 'hybrid_rock_unregister_nav_menus', 20 );
+
+function hybrid_rock_unregister_nav_menus()
+
+	unregister_nav_menu( 'secondary' );
+	unregister_nav_menu( 'subsidiary' );
+
+}
+
