@@ -26,14 +26,16 @@ add_action( 'customize_register', 'hybrid_rock_remove_customize_register' );
 function hybrid_rock_remove_customize_register( $wp_customize ) {
 
     $wp_customize->remove_section( 'themes' );
-    $wp_customize->remove_section( 'header_image' );
-    $wp_customize->remove_section( 'background_image' );
-    $wp_customize->remove_section( 'static_front_page' );
-    $wp_customize->remove_section( 'colors' );
-    $wp_customize->remove_section( 'title_tagline' );
-    $wp_customize->remove_control( 'blogname' );
-    $wp_customize->remove_control( 'blogdescription' );
-    $wp_customize->remove_control( 'display_header_text' );
+    $wp_customize->remove_section( 'header_image' ); // Default
+    $wp_customize->remove_section( 'background_image' ); // Default
+    $wp_customize->remove_section( 'static_front_page' ); // Default
+    $wp_customize->remove_section( 'colors' ); // Default
+    $wp_customize->remove_section( 'title_tagline' ); // Default
+    $wp_customize->remove_section( 'layout' ); // Hybrid Core
+    $wp_customize->remove_control( 'blogname' ); // Default
+    $wp_customize->remove_control( 'blogdescription' ); // Default
+    $wp_customize->remove_control( 'display_header_text' ); // Hybrid Core
+    $wp_customize->remove_control( 'theme_layout' ); // Hybrid Core
 
   //  $wp_customize->remove_panel('widgets')->active_callback = '__return_false';
 
@@ -82,8 +84,7 @@ function hybrid_rock_change_label_names( $translated_text, $text, $domain ){
     
         switch ( $translated_text ) {
 
-      
-
+           
             
         }
 

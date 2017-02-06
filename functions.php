@@ -374,4 +374,41 @@ function hybrid_rock_unregister_widgets() {
 } 
 
 
+/**
+ * Whitelabel: Envira Gallery
+ *
+ * @since  1.0.0
+ * @access public
+ * @return void
+ */
+
+
+add_filter( 'gettext', 'tgm_envira_whitelabel', 10, 3 );
+function tgm_envira_whitelabel( $translated_text, $source_text, $domain ) {
+    
+    // If not in the admin, return the default string.
+    if ( ! is_admin() ) {
+        return $translated_text;
+    }
+
+    if ( strpos( $source_text, 'an Envira' ) !== false ) {
+        return str_replace( 'an Envira', '', $translated_text );
+    }
+    
+    if ( strpos( $source_text, 'Envira' ) !== false ) {
+        return str_replace( 'Envira', '', $translated_text );
+    }
+    
+    return $translated_text;
+    
+}
+
+add_action( 'admin_init', 'tgm_envira_remove_header' );
+function tgm_envira_remove_header() {
+    
+    // Remove the Envira banner
+    remove_action( 'in_admin_header', array( Envira_Gallery_Posttype_Admin::get_instance(), 'admin_header' ), 100 );
+
+}
+
 
