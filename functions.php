@@ -45,7 +45,7 @@ add_action( 'after_setup_theme', 'hybrid_rock_theme_setup', 5 );
 function hybrid_rock_theme_setup() {
 
 	// Theme layouts.
-	add_theme_support( 'theme-layouts', array( 'default' => is_rtl() ? '2c-r' :'2c-l' ) );
+	// add_theme_support( 'theme-layouts', array( 'default' => is_rtl() ? '2c-r' :'2c-l' ) );
 
 	// Enable custom template hierarchy.
 	add_theme_support( 'hybrid-core-template-hierarchy' );

@@ -1,4 +1,4 @@
-<?php if ( '1c' !== hybrid_get_theme_layout() ) : // If not a one-column layout. ?>
+<?php // if ( '1c' !== hybrid_get_theme_layout() ) : // If not a one-column layout. ?>
 
 	<aside <?php hybrid_attr( 'sidebar', 'primary' ); ?>>
 
@@ -28,4 +28,4 @@
 
 	</aside><!-- #sidebar-primary -->
 
-<?php endif; // End layout check. ?>
+<?php // endif; // End layout check. ?>
